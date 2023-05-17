@@ -1,5 +1,6 @@
 <template>
-  <div>
-    <NuxtWelcome />
+  <div class="flex">
+    <Menu />
+    <NuxtPage />
   </div>
 </template>
