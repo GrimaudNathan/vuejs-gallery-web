@@ -1,8 +1,6 @@
-# Nuxt 3 Minimal Starter
-
-Look at the [Nuxt 3 documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
-
 ## Setup
+
+Create the ```.env``` file and add the ```API_BASE_URL``` variable. (e.g. ```http://localhost:3000```)
 
 Make sure to install the dependencies:
 
@@ -19,7 +17,7 @@ pnpm install
 
 ## Development Server
 
-Start the development server on `http://localhost:3000`
+Start the development server
 
 ```bash
 npm run dev
@@ -38,5 +36,3 @@ Locally preview production build:
 ```bash
 npm run preview
 ```
-
-Check out the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.
