@@ -24,13 +24,16 @@ async function changePicture(event) {
   refresh()
 }
 
-function downloadPicture() {
+async function downloadPicture() {
+  const { data: img } = await useMyFetch(`/images/${route.params.id}`)
   const link = document.createElement('a')
-  link.href = `http://localhost:3000/images/${route.params.id}`
+  const url = URL.createObjectURL(img.value)
+  link.href = url
   link.download = route.params.id
   document.body.appendChild(link)
   link.click()
   document.body.removeChild(link)
+  URL.revokeObjectURL(url)
 }
 
 async function sendResizedPicture(event) {
